@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Tailwind CSS</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a
+              href="#home"
+              class="font-bold text-lg text-primary block py-6 md:text-2xl"
+              >Efendi Sahrul</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger type=button"
+              class="absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#technology"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Technology</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 md:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hello Everyone 👋, I'M
+              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
+                >Efendi Sahrul</span
+              >
+            </h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+              <span class="text-dark">Web Developer</span> & UI/UX
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              I'M an <span class="text-dark font-bold">active student</span> at
+              Bina Sarana Informatika University
+            </p>
+
+            <a
+              href="#contact"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >contact me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 md:w-1/2">
+            <div
+              class="mt-10 lg:mt-9 lg:right-0 hover:border-primary hover:bg-primary rounded-full"
+            >
+              <img
+                src="dist/img/sapiens.svg"
+                alt="sahrul"
+                class="fill-current"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About section start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 md:w-1/2">
+            <h4 class="font-bold uppercase text-primary text-lg mb-3">
+              About Me
+            </h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 max-w-md lg:text-4xl">
+              Efendi Sahrul Darmawan
+            </h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              Passionate in Frontend Dev and UI/UX Design. Likes to build
+              fast-performence and well-designed website interfaces using the
+              latest technologies.
+            </p>
+          </div>
+          <div class="w-full px-4 md:w-1/2">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl md:pt-10"
+            >
+              Let's be friends
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+              If you want to be friends with me i put my linkedin link.
+            </p>
+            <div class="flex items-center">
+              <!-- github -->
+              <a
+                href="https://github.com/sahrul-dwann"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/efendi-sahrul"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- portofolio section start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Project terbaru
+            </h2>
+          </div>
+        </div>
+
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portofolio/fast-food.png"
+                alt="Fast food"
+                width="w-full"
+              />
+            </div>
+            <div class="flex justify-between items-center gap-0">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-4">
+                Fast Foods
+              </h3>
+              <a href="https://sahrul-dwann.github.io/fast-foods/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="fill-current hover:text-primary"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex gap-1 my-1">
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                HTML
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                CSS
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-2 py-1 text-secondary"
+              >
+                JS
+              </p>
+            </div>
+            <p class="font-medium text-base text-secondary">
+              Sebuah project website yang dibangun untuk tugas kuliah Web
+              Programing yang diharuskan untuk responsive.
+            </p>
+          </div>
+
+          <div class="mb-12 p-4 borde md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portofolio/landing-pagee.png"
+                alt="Fast food"
+                width="w-full"
+              />
+            </div>
+            <div class="flex justify-between items-center gap-0">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-4">
+                Landing Page
+              </h3>
+              <a href="https://sahrul-dwann.github.io/interior-landing-page/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="fill-current hover:text-primary"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex gap-1 my-1">
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                HTML
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                CSS
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-2 py-1 text-secondary"
+              >
+                JS
+              </p>
+            </div>
+            <p class="font-medium text-base text-secondary">
+              Website landing page pribadi untuk menambah ilmu dari Web Design
+              sederhana.
+            </p>
+          </div>
+          <div class="mb-12 p-4 borde md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portofolio/kedai-kopi.png"
+                alt="Fast food"
+                width="w-full"
+              />
+            </div>
+            <div class="flex justify-between items-center gap-0">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-4">
+                Kedai Kopi
+              </h3>
+              <a
+                href="https://sahrul-dwann.github.io/kedai-kopi-kenangan-senja/"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="fill-current hover:text-primary"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex gap-1 my-1">
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                HTML
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                CSS
+              </p>
+              <p
+                class="border text-sm border-slate-400 px-2 py-1 text-secondary"
+              >
+                JS
+              </p>
+            </div>
+            <p class="font-medium text-base text-secondary">
+              Website landing page pribadi untuk menambah ilmu dari Website
+              sederhana.
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portofolio/bank-sampahh.png"
+                alt="Fast food"
+                width="w-full"
+              />
+            </div>
+            <div class="flex justify-between items-center gap-0">
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-4">
+                Bank Sampah
+              </h3>
+              <a
+                href="https://www.figma.com/proto/kK6glDUW9qTz0CIFEJTkZZ/Untitled?node-id=42-6&p=f&t=MY0PX9GmEQwNRYyB-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=58%3A23"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="fill-current hover:text-primary"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex gap-1 my-1">
+              <p
+                class="border text-sm border-slate-400 px-1 py-1 text-secondary"
+              >
+                FIGMA
+              </p>
+            </div>
+            <p class="font-medium text-base text-secondary">
+              Project freelance membuat aplikasi bank sampah menggunkan Figma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portofolio section end -->
+
+    <!-- Technology section start -->
+    <section id="technology" class="pt-36 pb-32 bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Technology</h4>
+            <h2
+              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              The Technology I use now
+            </h2>
+            <p class="font-medium text-sm text-secondary md:text-lg">
+              Currently I am studying programming languages and also frameworks
+              for front-end developers.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <img
+              src="dist/img/technology/icons8-html.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+            <img
+              src="dist/img/technology/icons8-css.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+            <img
+              src="dist/img/technology/icons8-js.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+            <img
+              src="dist/img/technology/icons8-tailwindcss.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+            <img
+              src="dist/img/technology/icons8-react-native.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+            <img
+              src="dist/img/technology/icons8-bootstrap.svg"
+              alt="HTML"
+              class="mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Technology section end -->
+
+    <!-- contact section start -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Technology</h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              contact us
+            </h2>
+            <p class="font-medium text-sm text-secondary md:text-lg">
+              If there is an error on this website or you invite me to work at
+              your place, contact us.
+            </p>
+          </div>
+        </div>
+
+        <form>
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base text-primary font-bold"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base text-primary font-bold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base text-primary font-bold"
+                >Message</label
+              >
+              <textarea
+                type="email"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- Footer section start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">Sahrul</h2>
+            <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
+            <p>sahruld18@gmail.com</p>
+            <p>Cibinong, Kab.Bogor</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">
+              Writing Category
+            </h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Programming</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Technologies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Links</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#technology"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Technology</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex items-center justify-center mb-5">
+            <!-- github -->
+            <a
+              href="https://github.com/sahrul-dwann"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              ><svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/efendi-sahrul"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="font-medium text-sm text-slate-500 text-center">
+            Created by Sahrul. | © 2025.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
